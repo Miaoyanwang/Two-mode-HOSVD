@@ -2,6 +2,9 @@
 % Input:
 % T: a symmetric order-k tensor with dimension d
 % Ncomp: number of components to extract
+% Output:
+% output_vector: a matrix with Ncomp column, each column representing the estimated eigenvector. 
+% output_value: a lenght-Ncomp vector, each value representing the estimated eigenvalue. 
 function[output_vector,output_value]=HOSVD_extend(T,Ncomp)
 
 
