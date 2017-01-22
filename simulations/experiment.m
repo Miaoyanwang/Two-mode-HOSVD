@@ -8,7 +8,7 @@ sigmavector=[0.008,0.010,0.012,0.014,0.016];%% order 4
 
 ordervector=[3,4,5];
 sigmavector=[0,0.01,0.02,0.03,0.04,0.05;0,0.011,0.012,0.013,0.014,0.015;0,0.001,0.002,0.003,0.004,0.005]; %% order 5
-
+  
 ordervector=[3];
 sigmavector=[0.01,0.015,0.02,0.025,0.03];
 
@@ -99,7 +99,7 @@ toc;
 
 %%HOSVD
 tic;
-    [V_HOSVD]=HOSVD_extend(TCell{t,1},p,k,order);
+    [V_HOSVD]=HOSVD_extend(TCell{t,1},k,p,order);
 toc;
 fprintf(out_time2,'%f\t',toc);
 sum_err = 0.0;
