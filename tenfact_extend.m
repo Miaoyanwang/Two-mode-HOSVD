@@ -1,6 +1,6 @@
 function [V, Lambda, misc] = tenfact_extend(T, L, k, o)
 
-% TENFACT  Computes the orthogonal CP decomposition of a tensor.
+% TENFACT  computes the orthogonal CP decomposition of a tensor.
 %   [V, Lambda, flops, V0] = tendecomp(T, L, k) computes
 %   the orthogonal CP decomposition of a rank-k tensor via simultaneous
 %   matrix diagonalization.
@@ -9,6 +9,7 @@ function [V, Lambda, misc] = tenfact_extend(T, L, k, o)
 %       T:      o-order tensor (currently, 3<=o<=7)
 %       k:      Rank of T
 %       L:      Number of random projections of T
+%       o:      order of the tensor
 %
 %   OUTPUTS:
 %       V:      (d x k) matrix of orthogonal tensor components of T
@@ -27,13 +28,11 @@ function [V, Lambda, misc] = tenfact_extend(T, L, k, o)
 %   Our implementation requires the MATLAB Tensor Toolbox v. 2.5 or greater.
 %   The input tensor object must be constructed using the Tensor Toolbox.
 %
-%   For more information on the method see the following papers:
+%   For the original implementtion of TENFACT (o=3), see the following papers:
 %
 %   V. Kuleshov, A. Chaganty, P. Liang, Tensor Factorization via Matrix
 %   Factorization, AISTATS 2015.
-%
-%   V. Kuleshov, A. Chaganty, P. Liang, Simultaneous diagonalization:
-%   the asymmetric, low-rank, and noisy settings. ArXiv Technical Report.
+
 
 p = size(T,1);
 flops = [0 0];
