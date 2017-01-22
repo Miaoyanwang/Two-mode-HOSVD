@@ -78,6 +78,7 @@ T=tensor(T_true)+T_noise;
 TCell{t, 1} = T;
 VCell{t, 1} = V_true;
 
+%% Power Iteration
 tic;
     [V_tpm, ~, N] = tpm_extend(TCell{t,1}, 1, p, k,order);
 toc;
