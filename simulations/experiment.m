@@ -18,17 +18,17 @@ tries=50;
 rankvector=[2,10,25];
 
 
-outfile=sprintf('PowerDistributionD%dsigma.txt',p);
+outfile=sprintf('PowerErrorDistributionD%dsigma.txt',p);
 out = fopen(outfile, 'a');
 outfile_time=sprintf('PowertimeDistributionD%dsigma.txt',p);
 out_time = fopen(outfile_time, 'a');
 
-outfile2=sprintf('HOSVDDistributionD%dsigma.txt',p);
+outfile2=sprintf('HOSVDErrorDistributionD%dsigma.txt',p);
 out2 = fopen(outfile2, 'a');
 outfile_time2=sprintf('HOSVDtimeDistributionD%dsigma.txt',p);
 out_time2 = fopen(outfile_time2, 'a');
 
-outfile3=sprintf('OJDDistributionD%dsigma.txt',p);
+outfile3=sprintf('OJDErrorDistributionD%dsigma.txt',p);
 out3 = fopen(outfile3, 'a');
 outfile_time3=sprintf('OJDtimeDistributionD%dsigma.txt',p);
 out_time3 = fopen(outfile_time3, 'a');
