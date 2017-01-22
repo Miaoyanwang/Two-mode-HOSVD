@@ -19,16 +19,14 @@ function [V, D, iters] = tpm_extend(T, L, N, n,o)
 %
 %   The algorithm computes components of T one at a time by repeatedly
 %   multiplying the current iterate by the tensor: v1 = T(I,v0,v0,v0).
-%   After converging to a component, we deflate the tensor and repeat.
+%   After converging to a component, we deflate the tensor and repeat. 
 %
 %   Our implementation requires the MATLAB Tensor Toolbox v. 2.5 or greater.
 %   The input tensor object must be constructed using the Tensor Toolbox.
 %
-%   For more information on the method see the following paper:
+%   For original implementation of TPM (o=3) see the following paper:
 %
-%   V. Kuleshov, A. Chaganty, P. Liang, Tensor Factorization via Matrix
-%   Factorization, AISTATS 2015.
-%
+
 
 thr = 1e-4;
 k = size(T,1);
