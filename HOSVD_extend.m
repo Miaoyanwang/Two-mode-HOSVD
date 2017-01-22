@@ -33,7 +33,7 @@ for index=1:Ncomp
     Matrix.Basis=reshape(Rspace,[dim,dim,Ncomp]);
     [Rvector,norm_opt,~]=svds(Matrix.Basis(:,:,index),1);
     
-    delta=0.05;
+    delta=0.01;
     norm_delta=delta+0.1;
 
 
