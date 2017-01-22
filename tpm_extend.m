@@ -25,7 +25,7 @@ function [V, D, iters] = tpm_extend(T, L, N, n,o)
 %   The input tensor object must be constructed using the Tensor Toolbox.
 %
 %   For original implementation of TPM (o=3) see the following paper:
-%
+%   Tensor Decompositions for Learning Latent Variable Models, A. Anandkumar et al, JMLR 2014.
 
 
 thr = 1e-4;
