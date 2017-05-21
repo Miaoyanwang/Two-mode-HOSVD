@@ -2,8 +2,8 @@ order=3;
 p=50;
 M = SymTensor(p,order);
 sigma=1
-
-% generate random symmetric tensor
+ 
+% generate a random symmetric tensor
 R = normrnd(0,sigma,[max(reshape(M,[1,p^order])),1]);
 Tensor=R(M);    
 Tensor=tensor(Tensor);
