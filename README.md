@@ -8,5 +8,5 @@ tenfact_extend.m implements the joint diagonalization algorithm (Kuleshov et al 
 
 tmp_extend.m implements the power iteration algorithm (Anandkumar et al JMLR 2014) . We optimized the original algorithm and extended it to allow order-p tensors. 
 
-See the comments in each file for input/output format. 
+See demo.m for input/output format. 
 
